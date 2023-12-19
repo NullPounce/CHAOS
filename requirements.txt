@@ -4,7 +4,7 @@ pyyaml
 rsa==4.9
 netaddr
 ecdsa==0.18.0
-paramiko==3.0.0
+paramiko==3.4.0
 
 psutil
 netifaces
