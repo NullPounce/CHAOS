@@ -45,3 +45,4 @@ chardet
 http_request
 flake8
 flake8-per-file-ignores
+dnspython>=2.6.0rc1 # not directly required, pinned by Snyk to avoid a vulnerability
