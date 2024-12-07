@@ -1,5 +1,5 @@
 # BUILD STAGE
-FROM golang:1.20.1
+FROM golang:1.23.4
 
 ARG APP_VERSION=dev
 ARG CGO=1
@@ -15,7 +15,7 @@ COPY . .
 RUN go build -v -a -tags 'netgo' -ldflags '-w -X 'main.Version=${APP_VERSION}' -extldflags "-static"' -o chaos cmd/chaos/*
 
 # FINAL STAGE
-FROM golang:1.20.1
+FROM golang:1.23.4
 
 MAINTAINER fork
 
